@@ -1,0 +1,60 @@
+extends layout
+
+block content.carousel-inner
+    .item.active
+        .item-4
+          .carousel-caption-service
+            .container
+              .col-md-offset-2.col-md-8.col-sm-12
+                center
+                  h2 FEEL FREE TO SEND US A MESSAGE                  
+        br           
+        br           
+        br         
+        section#contact.page-section
+          .container
+            .row
+              .col-md-9.col-sm-12
+                .row
+                  form.contact-form(action='#', method='post')
+                    fieldset.col-md-4.col-sm-6.col-xs-12
+                      input#name(type='text', placeholder='Name...')                                     
+                    fieldset.col-md-4.col-sm-6.col-xs-12
+                      input#email(type='email', placeholder='Email...')                                     
+                    fieldset.col-md-4.col-sm-12.col-xs-12
+                      input#subject(type='text', placeholder='Subject...')                                   
+                    fieldset.col-md-12.col-sm-12.col-xs-12
+                      textarea#message(name='message', cols='30', rows='6', placeholder='Message...')                        
+              .col-md-3.col-sm-12
+                center
+                  .contact-info
+                    h4 CONTACT INFORMATION                                 
+                    p
+                      i
+                        | Leave your audience in awe with with stunning lights and astonishing special effects that spice up any venue!                       
+              center
+                form.contact-form(action='#', method='post')
+                  fieldset.col-md-3.col-sm-12
+                    input.button.default(type='submit', value='Send Message')
+      .clearfix.visible-xs-block
+      // SLIDER OPTIONS
+      .slider-options
+        .container
+          .row
+            .col-md-4.col-sm-4.col-xs-4.slider-nav
+              // Controls
+              a.left.carousel-control(href='index.html', role='button', data-slide='prev')
+                span.fa.fa-home                      
+              a.left.carousel-control(href='services.html', role='button', data-slide='next')
+                span.fa.fa-search                    
+              a.left.carousel-control(href='#home', role='button', data-slide='next')
+                span.fa.fa-envelope-o                    
+            .col-md-4.col-sm-4.col-xs-4
+              // Indicators
+              ol.carousel-indicators
+                li(data-target='#home', data-slide-to='0')                             
+                li(data-target='#home', data-slide-to='1')                             
+                li.active(data-target='#home', data-slide-to='2')                 
+            .col-md-4.col-sm-4.text-right.col-xs-4
+              a(href='aboutus.html')
+                img(src='img/Logo3.png', style='margin-top: 4%;  position:right')
