@@ -20,7 +20,7 @@ router.post('/send', function(req, res, next){
 		from: 'name <teamjuan115@gmail.com>',
 		to: 'teamjuan115@gmail.com',
 		subject: 'inquiries',
-		text: 'you have a new message... Name: '+req.body.name+ ' Email: '+req.body.email+ ' Message: '+req.body.Message,
+		text: 'you have a new message... Name: '+req.body.name+ ' Email: '+req.body.email+ ' Message: '+req.body.message,
 		html: '<p>You got a new message with the following details..</p><ul><li>Name: '+req.body.name+ '</li><li>Email: '+req.body.email+ '</li><li>Message: '+req.body.message+ '</li></ul>'
 	};
 
