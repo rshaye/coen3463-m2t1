@@ -1,0 +1,70 @@
+extend layout
+
+block content
+  .carousel-inner
+    .item.active
+      .item-4
+      .carousel-caption-service
+        .container
+          .col-md-offset-2.col-md-8.col-sm-12
+            center
+              h2 LIST OF SERVICES AVIALABLE
+      section#about.page-section.first-section
+        .container
+          .row
+            .col-md-4.col-sm-6.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                img(src='images/s1.jpg', alt='')
+                br
+                center
+                  a.button.default(href='/service1') Band Equipment Rentals
+            .col-md-4.col-sm-6.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                img(src='images/s2.jpg', alt='')
+                br
+                center
+                  a.button.default(href='/service2') Lights and Special Effects
+            .col-md-4.col-sm-12.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                img(src='images/s3.jpg', alt='')
+                br
+                center
+                  a.button.default(href='/service3') Stage and Trusses Rentals
+  .clearfix.visible-xs-block
+  // SLIDER OPTIONS
+  .slider-options
+    .container
+      .row
+        .col-md-4.col-sm-4.col-xs-4.slider-nav
+          // Controls
+          a.left.carousel-control(href='/', role='button', data-slide='prev')
+            span.fa.fa-home
+          a.left.carousel-control(href='/services', role='button', data-slide='next')
+            span.fa.fa-search
+          a.left.carousel-control(href='/contact', role='button', data-slide='next')
+            span.fa.fa-envelope-o
+        .col-md-4.col-sm-4.col-xs-4
+          // Indicators
+          ol.carousel-indicators
+            li(data-target='#home', data-slide-to='0')
+            li.active(data-target='#home', data-slide-to='1')
+            li(data-target='#home', data-slide-to='2')
+        .col-md-4.col-sm-4.text-right.col-xs-4
+          a(href='/aboutus')
+            img(src='images/Logo3.png', style='margin-top: 4%;  position:right')
+  // Carousel

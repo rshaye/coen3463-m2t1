@@ -1,0 +1,71 @@
+extend layout
+
+block content
+  .carousel-inner
+    .item.active
+      .item-4
+      .carousel-caption-service
+        .container
+          .col-md-offset-2.col-md-8.col-sm-12
+            center
+              h2 BAND EQUIPMENT RENTALS
+      section#about.page-section.first-section
+        .container
+          .row
+            .col-md-4.col-sm-6.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                img.service(src='images/s1.jpg', alt='')
+                br
+                center
+                  a.button.default(href='/contact') Book Now
+            .col-md-8.col-sm-25.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                h3.page-title SERVICE DESCRIPTION:
+                p
+                  i
+                    | Band equipment can either make or break a performance. Any artist would agree that the usage of quality band equipment must never be compromised. Team Juan is with you on that!
+                br
+                p
+                  i
+                    | Complete set of amplifiers for every instrument, speakers, drum sets, guitars, microphones, and many more that your band needs.
+                br
+                p
+                  i Premium band equipments to deliver the true sound of the starring band.
+                br
+                h3.page-title PRICE RANGE:
+                p
+                  i 5,000 to 28,000 Pesos
+                br
+  .clearfix.visible-xs-block
+  // SLIDER OPTIONS
+  .slider-options
+    .container
+      .row
+        .col-md-4.col-sm-4.col-xs-4.slider-nav
+          // Controls
+          a.left.carousel-control(href='/', role='button', data-slide='prev')
+            span.fa.fa-home
+          a.left.carousel-control(href='/services', role='button', data-slide='next')
+            span.fa.fa-search
+          a.left.carousel-control(href='/contact', role='button', data-slide='next')
+            span.fa.fa-envelope-o
+        .col-md-4.col-sm-4.col-xs-4
+          // Indicators
+          ol.carousel-indicators
+            li(data-target='#home', data-slide-to='0')
+            li.active(data-target='#home', data-slide-to='1')
+            li(data-target='#home', data-slide-to='2')
+        .col-md-4.col-sm-4.text-right.col-xs-4
+          a(href='/aboutus')
+            img(src='images/Logo3.png', style='margin-top: 4%;  position:right')
+  // Carousel

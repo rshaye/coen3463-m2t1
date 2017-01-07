@@ -1,0 +1,69 @@
+extend layout
+
+block content
+  .carousel-inner
+    .item.active
+      .item-4
+      .carousel-caption-service
+        .container
+          .col-md-offset-2.col-md-8.col-sm-12
+            center
+              h2 STAGE AND TRUSSES RENTALS
+      section#about.page-section.first-section
+        .container
+          .row
+            .col-md-4.col-sm-6.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                img.service(src='images/s3.jpg', alt='')
+                br
+                center
+                  a.button.default(href='/contact') Book Now
+            .col-md-8.col-sm-25.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                h3.page-title SERVICE DESCRIPTION:
+                p
+                  i
+                    | How the lights and other equipments positioned matter in the show, as it can greatly affect the overall aesthetics of your event. Stage and trusses play an important role in sufficiently supporting your fixtures in the air or even on the ground. If you need these for your stage, Team Juan got your back!
+                br
+                p
+                  i
+                    | Extensive design options including round truss, angle truss, spacer truss, heavy and light duty truss, and many more. Wide range of stage and truss sizes to fit your specific needs.
+            .col-md-4.col-sm-12.col-xs-12
+              .profile-image
+                h3.page-title PRICE RANGE:
+                p
+                  i 6,000 to 43,000 Pesos
+                br
+  .clearfix.visible-xs-block
+  // SLIDER OPTIONS
+  .slider-options
+    .container
+      .row
+        .col-md-4.col-sm-4.col-xs-4.slider-nav
+          // Controls
+          a.left.carousel-control(href='/', role='button', data-slide='prev')
+            span.fa.fa-home
+          a.left.carousel-control(href='/services', role='button', data-slide='next')
+            span.fa.fa-search
+          a.left.carousel-control(href='/contact', role='button', data-slide='next')
+            span.fa.fa-envelope-o
+        .col-md-4.col-sm-4.col-xs-4
+          // Indicators
+          ol.carousel-indicators
+            li(data-target='#home', data-slide-to='0')
+            li.active(data-target='#home', data-slide-to='1')
+            li(data-target='#home', data-slide-to='2')
+        .col-md-4.col-sm-4.text-right.col-xs-4
+          a(href='/aboutus')
+            img(src='images/Logo3.png', style='margin-top: 4%;  position:right')
+  // Carousel

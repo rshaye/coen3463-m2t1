@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  .carousel-inner
+    .item.active
+      .item-4
+      .carousel-caption-service
+        .container
+          .col-md-offset-2.col-md-8.col-sm-12
+            b
+              center
+                h2 LIGHTS AND SOUND SERVICES
+      section#about.page-section.first-section
+        .container
+          .row
+            .col-md-4.col-sm-6.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                a(href='/')
+                  img(src='/images/Logo.png', alt='')
+            .col-md-8.col-sm-25.col-xs-12
+              .profile-image
+                br
+                br
+                br
+                br
+                br
+                h3.page-title ABOUT US
+                br
+                p
+                  i
+                    | More than a decade of experience in music and entertainment plays a great part in the success of this company; not to mention that Team Juan is owned and managed by artists who know how it feels like to be a performer, a producer and audience.
+                br
+                p
+                  i
+                    | Every event is important for us. Our first-hand knowledge in the entertainment industry is the edge that enables us to turn ordinary events into memorable occasions.
+                br
+  .clearfix.visible-xs-block
+  // SLIDER OPTIONS
+  .slider-options
+    .container
+      .row
+        .col-md-4.col-sm-4.col-xs-4.slider-nav
+          // Controls
+          a.left.carousel-control(href='/', role='button', data-slide='prev')
+            span.fa.fa-home
+          a.left.carousel-control(href='/services', role='button', data-slide='next')
+            span.fa.fa-search
+          a.left.carousel-control(href='/contact', role='button', data-slide='next')
+            span.fa.fa-envelope-o
+        .col-md-4.col-sm-4.col-xs-4
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#home', data-slide-to='0')
+            li(data-target='#home', data-slide-to='1')
+            li(data-target='#home', data-slide-to='2')
+        .col-md-4.col-sm-4.text-right.col-xs-4
+          a(href='/')
+            img(src='/images/Logo3.png', style='margin-top: 4%;  position:right')
+  // Carousel
+  

@@ -1,0 +1,55 @@
+extend layout
+
+block content
+  #home.carousel.slide.carousel-fade(data-ride='carousel')
+    // Wrapper for slides
+    .carousel-inner
+      .item.active
+        .item-1
+        .carousel-caption
+          .container
+            .col-md-offset-2.col-md-8.col-sm-12
+              h2 PROFESSIONAL LIGHTS AND SOUND
+              p
+                i It takes an artist to know artist.
+              a.button.default(href='/aboutus') About Us
+      .clearfix.visible-xs-block
+      .item
+        .item-2
+        .carousel-caption
+          .container
+            .col-md-offset-2.col-md-8.col-sm-12
+              h2 TOP QUALITY AND RELIABLE EQUIPTMENT
+              p
+                i Team Juan knows quality when it comes to sound and lighting equipment.
+              a.button.default(href='/services') View Services
+      .item
+        .item-3
+        .carousel-caption
+          .container
+            .col-md-offset-2.col-md-8.col-sm-12
+              h2 TEAM UP WITH US
+              p
+                i It only takes less than 5 minutes to fill up the form.
+              a.button.default(href='/contact') Contact Us
+    // SLIDER OPTIONS
+    .slider-options
+      .container
+        .row
+          .col-md-4.col-sm-4.col-xs-4.slider-nav
+            // Controls
+            a.left.carousel-control(href='#home', role='button', data-slide='prev')
+              span.fa.fa-angle-left
+            a.left.carousel-control(href='#home', role='button', data-slide='next')
+              span.fa.fa-angle-right
+          .col-md-4.col-sm-4.col-xs-4
+            // Indicators
+            ol.carousel-indicators
+              li.active(data-target='#home', data-slide-to='0')
+              li(data-target='#home', data-slide-to='1')
+              li(data-target='#home', data-slide-to='2')
+          .col-md-4.col-sm-4.text-right.col-xs-4
+            a(href='/aboutus')
+              img(src='/images/Logo3.png', style='margin-top: 4%;  position:right')
+  // Carousel
+  
